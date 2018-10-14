@@ -5,7 +5,7 @@ ugid=$(id -u):$(id -g)
 # launch tensorflow docker container
 docker run -it --rm \
 	-p 8888:8888 \
-	-v $PWD:/mlstudy \
+	-v $PWD/study:/mlstudy \
 	-w /mlstudy \
 	-u $ugid \
 	mlstudy/tensorflow
